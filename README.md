@@ -46,7 +46,7 @@ go run main.go -script scripts/hello.go
 ```
 
 ## Project Structure
-
+```
 goscripter/
 ├── internal/
 │   ├── executor/        # Script execution logic
@@ -67,6 +67,7 @@ fileutils.EnsureDir(path string) error
 StringUtils
 
 // Coming soon
+```
 
 Writing Scripts
 
