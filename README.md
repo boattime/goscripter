@@ -16,12 +16,13 @@ GoScripter is a flexible scripting system for Go that allows you to write, manag
 To install GoScripter, use the following command:
 
 ```bash
-go install github.com/boattime/goscripter/cmd/runner@latest
+git clone https://github.com/boattime/goscripter
+```
 
-Quick Start
+## Quick Start
 
-    Create a script in the scripts directory:
-
+Create a script in the scripts directory:
+```go
 // scripts/hello.go
 package main
 
@@ -42,8 +43,9 @@ func main() {
     Run your script:
 
 go run main.go -script scripts/hello.go
+```
 
-Project Structure
+## Project Structure
 
 goscripter/
 ├── internal/
@@ -70,6 +72,7 @@ Writing Scripts
 
 Scripts are regular Go programs that can import and use GoScripter's utility libraries. Create your scripts in the scripts/ directory:
 
+```bash
 package main
 
 import (
@@ -80,6 +83,7 @@ import (
 func main() {
     // Your script logic here
 }
+```
 
 Usage Examples
 
@@ -89,7 +93,9 @@ go run main.go -script scripts/myscript.go
 
     Using with arguments (coming soon):
 
+```bash
 go run main.go -script scripts/process.go -args="file1.txt,file2.txt"
+```
 
 Contributing
 
@@ -130,7 +136,7 @@ Roadmap
     Script validation and linting
     Configuration management
 
-License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 Support
